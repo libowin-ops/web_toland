@@ -25,8 +25,26 @@
   <div data-tl-nav-mount></div>
 
   <main id="main">
-    <section class="tl-page-hero">
-      <div class="tl-container">
+    <section class="tl-page-hero" style="position:relative;overflow:hidden;">
+      <div class="tl-hero-accent" aria-hidden="true">
+        <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="def-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#0071e3" stop-opacity="0.10"/>
+              <stop offset="1" stop-color="#0071e3" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="480" fill="url(#def-grad)"/>
+          <g fill="none" stroke="#0071e3" stroke-opacity="0.18" stroke-width="1">
+            <path d="M0,80 C300,40 600,180 900,140 S1200,80 1200,80"/>
+            <path d="M0,160 C300,120 600,260 900,220 S1200,160 1200,160"/>
+            <path d="M0,240 C300,200 600,340 900,300 S1200,240 1200,240"/>
+            <path d="M0,320 C300,280 600,420 900,380 S1200,320 1200,320"/>
+            <path d="M0,400 C300,360 600,500 900,460 S1200,400 1200,400"/>
+          </g>
+        </svg>
+      </div>
+      <div class="tl-container" style="position:relative;z-index:1;">
         <p class="tl-section-eyebrow" data-i18n="products.eyebrow">产品系列</p>
         <h1 data-i18n="p_deformed.title">变形高温合金</h1>
         <p data-i18n="p_deformed.lead">产品概览</p>
@@ -43,26 +61,105 @@
 
     <section class="tl-section">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
-        <ul class="space-y-2 text-tl-secondary mt-6 tl-fade-in" style="font-size:1.0625rem;line-height:1.6;">
-          <li>· <span data-i18n="p_deformed.app1">应用 1</span></li>
-          <li>· <span data-i18n="p_deformed.app2">应用 2</span></li>
-          <li>· <span data-i18n="p_deformed.app3">应用 3</span></li>
-        </ul>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_overview">产品概述</h2>
+        <div class="tl-prose tl-fade-in mt-6">
+          <p data-i18n="p_deformed.intro1">介绍 1</p>
+          <p data-i18n="p_deformed.intro2">介绍 2</p>
+          <p data-i18n="p_deformed.intro3">介绍 3</p>
+        </div>
       </div>
     </section>
 
     <section class="tl-section tl-section-alt">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
-        <p class="tl-section-lead tl-fade-in mt-6" data-i18n="p_deformed.spec">规格</p>
-
-        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
-        <p class="tl-section-lead tl-fade-in mt-6 font-mono text-tl-text" data-i18n="p_deformed.grade" style="letter-spacing:0;">牌号</p>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
+        <div class="tl-chip-row tl-fade-in mt-6">
+          <span class="tl-chip" data-i18n="p_deformed.app1">应用 1</span>
+          <span class="tl-chip" data-i18n="p_deformed.app2">应用 2</span>
+          <span class="tl-chip" data-i18n="p_deformed.app3">应用 3</span>
+          <span class="tl-chip" data-i18n="p_deformed.app4">应用 4</span>
+          <span class="tl-chip" data-i18n="p_deformed.app5">应用 5</span>
+          <span class="tl-chip" data-i18n="p_deformed.app6">应用 6</span>
+          <span class="tl-chip" data-i18n="p_deformed.app7">应用 7</span>
+        </div>
       </div>
     </section>
 
     <section class="tl-section">
+      <div class="tl-container-narrow">
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-spec-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.spec_variety">品种</th>
+                <th data-i18n="tbl.spec_subtype">子类</th>
+                <th data-i18n="tbl.spec_size">规格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="tbl.bar">棒材</td><td data-i18n="tbl.bar_hot">热轧棒</td><td>Φ16–200 mm</td></tr>
+              <tr><td data-i18n="tbl.bar">棒材</td><td data-i18n="tbl.bar_cold">冷拉棒</td><td>Φ5–50 mm</td></tr>
+              <tr><td data-i18n="tbl.bar">棒材</td><td data-i18n="tbl.bar_forge">锻棒</td><td>Φ200–500 mm</td></tr>
+              <tr><td data-i18n="tbl.wire">丝材</td><td data-i18n="tbl.wire_round">圆丝</td><td>Φ0.1–12 mm</td></tr>
+              <tr><td data-i18n="tbl.strip">带材</td><td data-i18n="tbl.cold_rolled">冷轧</td><td>δ0.05–2.5 mm × W ≤ 300 mm</td></tr>
+              <tr><td data-i18n="tbl.strip">带材</td><td data-i18n="tbl.hot_rolled">热轧</td><td>δ2–15 mm × W ≤ 500 mm</td></tr>
+              <tr><td data-i18n="tbl.plate">板材</td><td data-i18n="tbl.cold_rolled">冷轧</td><td>δ0.5–12 mm</td></tr>
+              <tr><td data-i18n="tbl.plate">板材</td><td data-i18n="tbl.hot_rolled">热轧</td><td>δ4–50 mm</td></tr>
+              <tr><td data-i18n="tbl.tube_seamless">无缝管材</td><td data-i18n="tbl.cold_rolled">冷轧</td><td>OD Φ4–152 mm</td></tr>
+              <tr><td data-i18n="tbl.tube_seamless">无缝管材</td><td data-i18n="tbl.hot_rolled">热轧</td><td>OD Φ60–260 mm</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-grade-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.grade_domestic">国内牌号</th>
+                <th data-i18n="tbl.grade_foreign">国外牌号</th>
+                <th data-i18n="tbl.grade_uns">UNS / 编号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>GH3030</td><td>NIMONIC 75</td><td>N06075</td></tr>
+              <tr><td>GH3039</td><td>—</td><td>—</td></tr>
+              <tr><td>GH3044</td><td>—</td><td>—</td></tr>
+              <tr><td>GH3128</td><td>HASTELLOY X</td><td>N06002</td></tr>
+              <tr><td>GH3536</td><td>HASTELLOY X</td><td>N06002</td></tr>
+              <tr><td>GH3625</td><td>INCONEL 625</td><td>N06625</td></tr>
+              <tr><td>GH4033</td><td>NIMONIC 80</td><td>—</td></tr>
+              <tr><td>GH4037</td><td>—</td><td>—</td></tr>
+              <tr><td>GH4049</td><td>—</td><td>—</td></tr>
+              <tr><td>GH4080A</td><td>NIMONIC 80A</td><td>N07080</td></tr>
+              <tr><td>GH4099</td><td>—</td><td>—</td></tr>
+              <tr><td>GH4133</td><td>—</td><td>—</td></tr>
+              <tr><td>GH4141</td><td>WASPALOY</td><td>N07001</td></tr>
+              <tr><td>GH4145</td><td>INCONEL X-750</td><td>N07750</td></tr>
+              <tr><td>GH4169</td><td>INCONEL 718</td><td>N07718</td></tr>
+              <tr><td>GH4202</td><td>—</td><td>—</td></tr>
+              <tr><td>GH4413</td><td>—</td><td>—</td></tr>
+              <tr><td>GH4500</td><td>—</td><td>—</td></tr>
+              <tr><td>GH4586</td><td>INCONEL 706</td><td>N09706</td></tr>
+              <tr><td>GH4626</td><td>INCOLOY 925</td><td>N09925</td></tr>
+              <tr><td>GH4648</td><td>INCONEL 740H</td><td>N07740</td></tr>
+              <tr><td>GH4698</td><td>—</td><td>—</td></tr>
+              <tr><td>GH4710</td><td>INCONEL 706</td><td>N09706</td></tr>
+              <tr><td>GH4720Li</td><td>UDIMET 720Li</td><td>—</td></tr>
+              <tr><td>GH4738</td><td>WASPALOY</td><td>N07001</td></tr>
+              <tr><td>GH4742</td><td>UDIMET 700</td><td>—</td></tr>
+              <tr><td>GH4901</td><td>INCOLOY 901</td><td>N09901</td></tr>
+              <tr><td>GH4945</td><td>INCOLOY 945</td><td>N09945</td></tr>
+              <tr><td>GH4975</td><td>—</td><td>—</td></tr>
+              <tr><td>GH5188</td><td>HAYNES 188 / UDIMET 188</td><td>R30188</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="tl-section tl-section-alt">
       <div class="tl-container">
         <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_lines">对应产线</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10" data-stagger>

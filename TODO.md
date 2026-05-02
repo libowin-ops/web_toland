@@ -197,6 +197,19 @@
 - [x] 本地 `python3 -m http.server` 全站 200 验证(31/31 HTML + 9 关键资源)
 - [x] 跨深度引用解析全部通过(index 54 / about 11 / honor 9 / casting 12 / post 10 / search 9 全部 0 broken)
 
+## P21 · 产品详情页大改(对齐源站 + 表格化 + SVG 装饰)
+
+- [x] custom.css 新增 `.tl-prose` / `.tl-chip-row` / `.tl-chip` / `.tl-table-wrap` / `.tl-spec-table` / `.tl-grade-table` / `.tl-hero-accent` (~125 行)
+- [x] i18n 扩容 ~26 个共享表头 / 品种 / 子类键(`tbl.spec_*`、`tbl.bar*`、`tbl.wire*`、`tbl.strip`、`tbl.cold_rolled`、`tbl.hot_rolled`、`tbl.plate`、`tbl.tube_seamless`、`tbl.steel_cast/wrought`、`tbl.cast_master/part`、`tbl.by_agreement`、`tbl.max_weight`、`tbl.grade_domestic/foreign/uns`)
+- [x] i18n 7 个产品块全部从 3 应用扩到 7 应用 + 3 段 intro,zh/en 完全对称
+- [x] `products.detail_overview` / `detail_grades_count` / `detail_specs_count` 新键
+- [x] 7 个产品页全部重写: 概述段落 + chips 行 + 规格表 + 牌号表 + Hero SVG 装饰
+- [x] 牌号覆盖: 铸造 15 / 变形 30 / 不锈钢 14 / 镍基 22 / 精密 17 / 焊接 21 / 电热 5
+- [x] 嵌入 SVG 装饰: 铸造-晶格 / 变形-流线 / 不锈钢-同心环 / 镍基-蜂巢 / 精密-波形 / 焊接-火花 / 电热-螺旋
+- [x] i18n 对称性 419/419,所有 product 页 data-i18n 键 100% 命中
+- [x] 31/31 HTML 全部 HTTP 200(本地)
+
+
 ## 后续待办(下一次会话)
 
 ### 🚀 部署执行

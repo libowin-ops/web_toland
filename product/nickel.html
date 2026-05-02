@@ -25,8 +25,23 @@
   <div data-tl-nav-mount></div>
 
   <main id="main">
-    <section class="tl-page-hero">
-      <div class="tl-container">
+    <section class="tl-page-hero" style="position:relative;overflow:hidden;">
+      <div class="tl-hero-accent" aria-hidden="true">
+        <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="ni-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0071e3" stop-opacity="0.08"/>
+              <stop offset="1" stop-color="#0071e3" stop-opacity="0"/>
+            </linearGradient>
+            <pattern id="ni-hex" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+              <path d="M30 0 L60 17 L60 35 L30 52 L0 35 L0 17 Z" fill="none" stroke="#0071e3" stroke-opacity="0.18" stroke-width="0.7"/>
+            </pattern>
+          </defs>
+          <rect width="1200" height="480" fill="url(#ni-grad)"/>
+          <rect width="1200" height="480" fill="url(#ni-hex)"/>
+        </svg>
+      </div>
+      <div class="tl-container" style="position:relative;z-index:1;">
         <p class="tl-section-eyebrow" data-i18n="products.eyebrow">产品系列</p>
         <h1 data-i18n="p_nickel.title">镍基耐蚀合金</h1>
         <p data-i18n="p_nickel.lead">产品概览</p>
@@ -43,26 +58,97 @@
 
     <section class="tl-section">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
-        <ul class="space-y-2 text-tl-secondary mt-6 tl-fade-in" style="font-size:1.0625rem;line-height:1.6;">
-          <li>· <span data-i18n="p_nickel.app1">应用 1</span></li>
-          <li>· <span data-i18n="p_nickel.app2">应用 2</span></li>
-          <li>· <span data-i18n="p_nickel.app3">应用 3</span></li>
-        </ul>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_overview">产品概述</h2>
+        <div class="tl-prose tl-fade-in mt-6">
+          <p data-i18n="p_nickel.intro1">介绍 1</p>
+          <p data-i18n="p_nickel.intro2">介绍 2</p>
+          <p data-i18n="p_nickel.intro3">介绍 3</p>
+        </div>
       </div>
     </section>
 
     <section class="tl-section tl-section-alt">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
-        <p class="tl-section-lead tl-fade-in mt-6" data-i18n="p_nickel.spec">规格</p>
-
-        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
-        <p class="tl-section-lead tl-fade-in mt-6 font-mono text-tl-text" data-i18n="p_nickel.grade" style="letter-spacing:0;">牌号</p>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
+        <div class="tl-chip-row tl-fade-in mt-6">
+          <span class="tl-chip" data-i18n="p_nickel.app1">应用 1</span>
+          <span class="tl-chip" data-i18n="p_nickel.app2">应用 2</span>
+          <span class="tl-chip" data-i18n="p_nickel.app3">应用 3</span>
+          <span class="tl-chip" data-i18n="p_nickel.app4">应用 4</span>
+          <span class="tl-chip" data-i18n="p_nickel.app5">应用 5</span>
+          <span class="tl-chip" data-i18n="p_nickel.app6">应用 6</span>
+          <span class="tl-chip" data-i18n="p_nickel.app7">应用 7</span>
+        </div>
       </div>
     </section>
 
     <section class="tl-section">
+      <div class="tl-container-narrow">
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-spec-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.spec_variety">品种</th>
+                <th data-i18n="tbl.spec_subtype">子类</th>
+                <th data-i18n="tbl.spec_size">规格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="tbl.bar">棒材</td><td data-i18n="tbl.bar_hot">热轧棒</td><td>Φ16–200 mm</td></tr>
+              <tr><td data-i18n="tbl.bar">棒材</td><td data-i18n="tbl.bar_cold">冷拉棒</td><td>Φ5–50 mm</td></tr>
+              <tr><td data-i18n="tbl.bar">棒材</td><td data-i18n="tbl.bar_forge">锻棒</td><td>Φ200–500 mm</td></tr>
+              <tr><td data-i18n="tbl.wire">丝材</td><td data-i18n="tbl.wire_round">圆丝</td><td>Φ0.1–12 mm</td></tr>
+              <tr><td data-i18n="tbl.strip">带材</td><td data-i18n="tbl.cold_rolled">冷轧</td><td>δ0.05–2.5 mm × W ≤ 300 mm</td></tr>
+              <tr><td data-i18n="tbl.strip">带材</td><td data-i18n="tbl.hot_rolled">热轧</td><td>δ2–15 mm × W ≤ 500 mm</td></tr>
+              <tr><td data-i18n="tbl.plate">板材</td><td data-i18n="tbl.cold_rolled">冷轧</td><td>δ0.5–12 mm</td></tr>
+              <tr><td data-i18n="tbl.plate">板材</td><td data-i18n="tbl.hot_rolled">热轧</td><td>δ4–50 mm</td></tr>
+              <tr><td data-i18n="tbl.tube_seamless">无缝管材</td><td data-i18n="tbl.cold_rolled">冷轧</td><td>OD Φ4–152 mm</td></tr>
+              <tr><td data-i18n="tbl.tube_seamless">无缝管材</td><td data-i18n="tbl.hot_rolled">热轧</td><td>OD Φ60–260 mm</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-grade-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.grade_domestic">国内牌号</th>
+                <th data-i18n="tbl.grade_foreign">国外牌号</th>
+                <th data-i18n="tbl.grade_uns">UNS / 编号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>NS112</td><td>INCONEL 600</td><td>N06600</td></tr>
+              <tr><td>NS131</td><td>HASTELLOY G-3</td><td>N06985</td></tr>
+              <tr><td>NS132</td><td>HASTELLOY G-30</td><td>N06030</td></tr>
+              <tr><td>NS141</td><td>INCOLOY 825</td><td>N08825</td></tr>
+              <tr><td>NS142</td><td>INCOLOY 800</td><td>N08800</td></tr>
+              <tr><td>NS143</td><td>INCOLOY 800H</td><td>N08810</td></tr>
+              <tr><td>NS151</td><td>INCOLOY 925</td><td>N09925</td></tr>
+              <tr><td>NS152</td><td>INCOLOY 25-6MO</td><td>N08926</td></tr>
+              <tr><td>NS161</td><td>HASTELLOY G-35</td><td>N06035</td></tr>
+              <tr><td>NS162</td><td>INCOLOY 27-7MO</td><td>S31277</td></tr>
+              <tr><td>NS321</td><td>HASTELLOY B</td><td>N10001</td></tr>
+              <tr><td>NS322</td><td>HASTELLOY B-2</td><td>N10665</td></tr>
+              <tr><td>NS323</td><td>HASTELLOY B-3</td><td>N10675</td></tr>
+              <tr><td>NS333</td><td>HASTELLOY C</td><td>N10002</td></tr>
+              <tr><td>NS334</td><td>HASTELLOY C-276</td><td>N10276</td></tr>
+              <tr><td>NS335</td><td>HASTELLOY C-22</td><td>N06022</td></tr>
+              <tr><td>NS336</td><td>HASTELLOY C-2000</td><td>N06200</td></tr>
+              <tr><td>NS3303</td><td>INCONEL 601</td><td>N06601</td></tr>
+              <tr><td>NS3306</td><td>INCONEL 625</td><td>N06625</td></tr>
+              <tr><td>NS411</td><td>MONEL 400</td><td>N04400</td></tr>
+              <tr><td>NS412</td><td>MONEL K-500</td><td>N05500</td></tr>
+              <tr><td>NS413</td><td>MONEL R-405</td><td>N04405</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="tl-section tl-section-alt">
       <div class="tl-container">
         <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_lines">对应产线</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10" data-stagger>

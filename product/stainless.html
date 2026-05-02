@@ -25,8 +25,28 @@
   <div data-tl-nav-mount></div>
 
   <main id="main">
-    <section class="tl-page-hero">
-      <div class="tl-container">
+    <section class="tl-page-hero" style="position:relative;overflow:hidden;">
+      <div class="tl-hero-accent" aria-hidden="true">
+        <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="ss-grad" cx="0.85" cy="0.5" r="0.7">
+              <stop offset="0" stop-color="#0071e3" stop-opacity="0.10"/>
+              <stop offset="1" stop-color="#0071e3" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="1200" height="480" fill="url(#ss-grad)"/>
+          <g fill="none" stroke="#0071e3" stroke-opacity="0.16" stroke-width="0.8" transform="translate(1020 240)">
+            <circle r="60"/>
+            <circle r="120"/>
+            <circle r="180"/>
+            <circle r="240"/>
+            <circle r="300"/>
+            <circle r="360"/>
+            <circle r="420"/>
+          </g>
+        </svg>
+      </div>
+      <div class="tl-container" style="position:relative;z-index:1;">
         <p class="tl-section-eyebrow" data-i18n="products.eyebrow">产品系列</p>
         <h1 data-i18n="p_stainless.title">特种不锈钢</h1>
         <p data-i18n="p_stainless.lead">产品概览</p>
@@ -43,26 +63,88 @@
 
     <section class="tl-section">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
-        <ul class="space-y-2 text-tl-secondary mt-6 tl-fade-in" style="font-size:1.0625rem;line-height:1.6;">
-          <li>· <span data-i18n="p_stainless.app1">应用 1</span></li>
-          <li>· <span data-i18n="p_stainless.app2">应用 2</span></li>
-          <li>· <span data-i18n="p_stainless.app3">应用 3</span></li>
-        </ul>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_overview">产品概述</h2>
+        <div class="tl-prose tl-fade-in mt-6">
+          <p data-i18n="p_stainless.intro1">介绍 1</p>
+          <p data-i18n="p_stainless.intro2">介绍 2</p>
+          <p data-i18n="p_stainless.intro3">介绍 3</p>
+        </div>
       </div>
     </section>
 
     <section class="tl-section tl-section-alt">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
-        <p class="tl-section-lead tl-fade-in mt-6" data-i18n="p_stainless.spec">规格</p>
-
-        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
-        <p class="tl-section-lead tl-fade-in mt-6 font-mono text-tl-text" data-i18n="p_stainless.grade" style="letter-spacing:0;">牌号</p>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
+        <div class="tl-chip-row tl-fade-in mt-6">
+          <span class="tl-chip" data-i18n="p_stainless.app1">应用 1</span>
+          <span class="tl-chip" data-i18n="p_stainless.app2">应用 2</span>
+          <span class="tl-chip" data-i18n="p_stainless.app3">应用 3</span>
+          <span class="tl-chip" data-i18n="p_stainless.app4">应用 4</span>
+          <span class="tl-chip" data-i18n="p_stainless.app5">应用 5</span>
+          <span class="tl-chip" data-i18n="p_stainless.app6">应用 6</span>
+          <span class="tl-chip" data-i18n="p_stainless.app7">应用 7</span>
+        </div>
       </div>
     </section>
 
     <section class="tl-section">
+      <div class="tl-container-narrow">
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-spec-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.spec_steeltype">钢种</th>
+                <th data-i18n="tbl.spec_variety">品种</th>
+                <th data-i18n="tbl.spec_size">规格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="tbl.steel_cast">特种不锈钢(铸造)</td><td>—</td><td data-i18n="tbl.by_agreement">协议</td></tr>
+              <tr><td data-i18n="tbl.steel_wrought">特种不锈钢(变形)</td><td data-i18n="tbl.bar_hot">热轧棒</td><td>Φ16–200 mm</td></tr>
+              <tr><td data-i18n="tbl.steel_wrought">特种不锈钢(变形)</td><td data-i18n="tbl.bar_cold">冷拉棒</td><td>Φ5–50 mm</td></tr>
+              <tr><td data-i18n="tbl.steel_wrought">特种不锈钢(变形)</td><td data-i18n="tbl.bar_forge">锻棒</td><td>Φ200–500 mm</td></tr>
+              <tr><td data-i18n="tbl.steel_wrought">特种不锈钢(变形)</td><td data-i18n="tbl.wire_round">圆丝</td><td>Φ0.1–12 mm</td></tr>
+              <tr><td data-i18n="tbl.steel_wrought">特种不锈钢(变形)</td><td data-i18n="tbl.cold_rolled">冷轧带材</td><td>δ0.05–2.5 mm × W ≤ 300 mm</td></tr>
+              <tr><td data-i18n="tbl.steel_wrought">特种不锈钢(变形)</td><td data-i18n="tbl.hot_rolled">热轧带材</td><td>δ2–15 mm × W ≤ 500 mm</td></tr>
+              <tr><td data-i18n="tbl.steel_wrought">特种不锈钢(变形)</td><td data-i18n="tbl.cold_rolled">冷轧板材</td><td>δ0.5–12 mm</td></tr>
+              <tr><td data-i18n="tbl.steel_wrought">特种不锈钢(变形)</td><td data-i18n="tbl.hot_rolled">热轧板材</td><td>δ4–50 mm</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-grade-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.grade_domestic">国内牌号</th>
+                <th data-i18n="tbl.grade_foreign">国外牌号</th>
+                <th data-i18n="tbl.grade_uns">UNS / 编号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>0Cr17Ni4Cu4Nb</td><td>17-4PH</td><td>S17400</td></tr>
+              <tr><td>1Cr17Ni2</td><td>431</td><td>S43100</td></tr>
+              <tr><td>06Cr19Ni10</td><td>304</td><td>S30400</td></tr>
+              <tr><td>022Cr19Ni10</td><td>304L</td><td>S30403</td></tr>
+              <tr><td>06Cr18Ni11Ti</td><td>321</td><td>S32100</td></tr>
+              <tr><td>06Cr17Ni12Mo2</td><td>316</td><td>S31600</td></tr>
+              <tr><td>022Cr17Ni12Mo2</td><td>316L</td><td>S31603</td></tr>
+              <tr><td>0Cr18Ni12Mo2Ti</td><td>316Ti</td><td>S31635</td></tr>
+              <tr><td>1Cr13</td><td>410</td><td>S41000</td></tr>
+              <tr><td>2Cr13</td><td>420</td><td>S42000</td></tr>
+              <tr><td>06Cr25Ni20</td><td>310S</td><td>S31008</td></tr>
+              <tr><td>022Cr19Ni13Mo3</td><td>317L</td><td>S31703</td></tr>
+              <tr><td>1Cr25Ni20Si2</td><td>314</td><td>S31400</td></tr>
+              <tr><td>0Cr15Ni7Mo2Al</td><td>PH15-7Mo</td><td>S15700</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="tl-section tl-section-alt">
       <div class="tl-container">
         <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_lines">对应产线</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10" data-stagger>

@@ -25,8 +25,24 @@
   <div data-tl-nav-mount></div>
 
   <main id="main">
-    <section class="tl-page-hero">
-      <div class="tl-container">
+    <section class="tl-page-hero" style="position:relative;overflow:hidden;">
+      <div class="tl-hero-accent" aria-hidden="true">
+        <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="cast-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0071e3" stop-opacity="0.08"/>
+              <stop offset="1" stop-color="#0071e3" stop-opacity="0"/>
+            </linearGradient>
+            <pattern id="cast-lattice" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 80 40 L 40 80 L 0 40 Z" fill="none" stroke="#0071e3" stroke-opacity="0.18" stroke-width="0.7"/>
+              <circle cx="40" cy="40" r="2" fill="#0071e3" fill-opacity="0.25"/>
+            </pattern>
+          </defs>
+          <rect width="1200" height="480" fill="url(#cast-grad)"/>
+          <rect width="1200" height="480" fill="url(#cast-lattice)"/>
+        </svg>
+      </div>
+      <div class="tl-container" style="position:relative;z-index:1;">
         <p class="tl-section-eyebrow" data-i18n="products.eyebrow">产品系列</p>
         <h1 data-i18n="p_casting.title">铸造高温合金</h1>
         <p data-i18n="p_casting.lead">产品概览</p>
@@ -43,26 +59,81 @@
 
     <section class="tl-section">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
-        <ul class="space-y-2 text-tl-secondary mt-6 tl-fade-in" style="font-size:1.0625rem;line-height:1.6;">
-          <li>· <span data-i18n="p_casting.app1">应用 1</span></li>
-          <li>· <span data-i18n="p_casting.app2">应用 2</span></li>
-          <li>· <span data-i18n="p_casting.app3">应用 3</span></li>
-        </ul>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_overview">产品概述</h2>
+        <div class="tl-prose tl-fade-in mt-6">
+          <p data-i18n="p_casting.intro1">介绍 1</p>
+          <p data-i18n="p_casting.intro2">介绍 2</p>
+          <p data-i18n="p_casting.intro3">介绍 3</p>
+        </div>
       </div>
     </section>
 
     <section class="tl-section tl-section-alt">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
-        <p class="tl-section-lead tl-fade-in mt-6" data-i18n="p_casting.spec">规格</p>
-
-        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
-        <p class="tl-section-lead tl-fade-in mt-6 font-mono text-tl-text" data-i18n="p_casting.grade" style="letter-spacing:0;">牌号</p>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
+        <div class="tl-chip-row tl-fade-in mt-6">
+          <span class="tl-chip" data-i18n="p_casting.app1">应用 1</span>
+          <span class="tl-chip" data-i18n="p_casting.app2">应用 2</span>
+          <span class="tl-chip" data-i18n="p_casting.app3">应用 3</span>
+          <span class="tl-chip" data-i18n="p_casting.app4">应用 4</span>
+          <span class="tl-chip" data-i18n="p_casting.app5">应用 5</span>
+          <span class="tl-chip" data-i18n="p_casting.app6">应用 6</span>
+          <span class="tl-chip" data-i18n="p_casting.app7">应用 7</span>
+        </div>
       </div>
     </section>
 
     <section class="tl-section">
+      <div class="tl-container-narrow">
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-spec-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.spec_variety">品种</th>
+                <th data-i18n="tbl.spec_size">规格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="tbl.cast_master">铸造母合金</td><td>Φ50–100 mm</td></tr>
+              <tr><td data-i18n="tbl.cast_part">精密铸件</td><td data-i18n="tbl.max_weight">最大浇注重量 650 kg</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-grade-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.grade_domestic">国内牌号</th>
+                <th data-i18n="tbl.grade_foreign">国外牌号</th>
+                <th data-i18n="tbl.grade_uns">UNS / 编号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>K403</td><td>—</td><td>—</td></tr>
+              <tr><td>K417</td><td>—</td><td>—</td></tr>
+              <tr><td>K4169</td><td>INCONEL 718</td><td>N07718</td></tr>
+              <tr><td>K423</td><td>—</td><td>—</td></tr>
+              <tr><td>K423A</td><td>—</td><td>—</td></tr>
+              <tr><td>K424</td><td>—</td><td>—</td></tr>
+              <tr><td>K4648</td><td>—</td><td>—</td></tr>
+              <tr><td>K418</td><td>INCONEL 713C</td><td>N07713</td></tr>
+              <tr><td>K417G</td><td>—</td><td>—</td></tr>
+              <tr><td>K4750</td><td>—</td><td>—</td></tr>
+              <tr><td>K605</td><td>HAYNES 25 / L605</td><td>R30605</td></tr>
+              <tr><td>K477</td><td>—</td><td>—</td></tr>
+              <tr><td>K6059</td><td>—</td><td>—</td></tr>
+              <tr><td>K465</td><td>—</td><td>—</td></tr>
+              <tr><td>K536</td><td>HAYNES 188</td><td>R30188</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="tl-section tl-section-alt">
       <div class="tl-container">
         <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_lines">对应产线</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10" data-stagger>

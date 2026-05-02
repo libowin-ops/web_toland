@@ -25,8 +25,25 @@
   <div data-tl-nav-mount></div>
 
   <main id="main">
-    <section class="tl-page-hero">
-      <div class="tl-container">
+    <section class="tl-page-hero" style="position:relative;overflow:hidden;">
+      <div class="tl-hero-accent" aria-hidden="true">
+        <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="he-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#0071e3" stop-opacity="0.10"/>
+              <stop offset="1" stop-color="#0071e3" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="480" fill="url(#he-grad)"/>
+          <g fill="none" stroke="#0071e3" stroke-opacity="0.20" stroke-width="1.4" stroke-linecap="round">
+            <path d="M40 240 a 50 30 0 1 1 100 0 a 50 30 0 1 0 100 0 a 50 30 0 1 1 100 0 a 50 30 0 1 0 100 0 a 50 30 0 1 1 100 0 a 50 30 0 1 0 100 0 a 50 30 0 1 1 100 0 a 50 30 0 1 0 100 0 a 50 30 0 1 1 100 0 a 50 30 0 1 0 100 0 a 50 30 0 1 1 100 0 a 50 30 0 1 0 100 0"/>
+          </g>
+          <g fill="none" stroke="#0071e3" stroke-opacity="0.12" stroke-width="1" stroke-linecap="round">
+            <path d="M40 320 a 50 25 0 1 1 100 0 a 50 25 0 1 0 100 0 a 50 25 0 1 1 100 0 a 50 25 0 1 0 100 0 a 50 25 0 1 1 100 0 a 50 25 0 1 0 100 0 a 50 25 0 1 1 100 0 a 50 25 0 1 0 100 0 a 50 25 0 1 1 100 0 a 50 25 0 1 0 100 0"/>
+          </g>
+        </svg>
+      </div>
+      <div class="tl-container" style="position:relative;z-index:1;">
         <p class="tl-section-eyebrow" data-i18n="products.eyebrow">产品系列</p>
         <h1 data-i18n="p_heating.title">高电阻电热合金</h1>
         <p data-i18n="p_heating.lead">产品概览</p>
@@ -43,26 +60,72 @@
 
     <section class="tl-section">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
-        <ul class="space-y-2 text-tl-secondary mt-6 tl-fade-in" style="font-size:1.0625rem;line-height:1.6;">
-          <li>· <span data-i18n="p_heating.app1">应用 1</span></li>
-          <li>· <span data-i18n="p_heating.app2">应用 2</span></li>
-          <li>· <span data-i18n="p_heating.app3">应用 3</span></li>
-        </ul>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_overview">产品概述</h2>
+        <div class="tl-prose tl-fade-in mt-6">
+          <p data-i18n="p_heating.intro1">介绍 1</p>
+          <p data-i18n="p_heating.intro2">介绍 2</p>
+          <p data-i18n="p_heating.intro3">介绍 3</p>
+        </div>
       </div>
     </section>
 
     <section class="tl-section tl-section-alt">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
-        <p class="tl-section-lead tl-fade-in mt-6" data-i18n="p_heating.spec">规格</p>
-
-        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
-        <p class="tl-section-lead tl-fade-in mt-6 font-mono text-tl-text" data-i18n="p_heating.grade" style="letter-spacing:0;">牌号</p>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
+        <div class="tl-chip-row tl-fade-in mt-6">
+          <span class="tl-chip" data-i18n="p_heating.app1">应用 1</span>
+          <span class="tl-chip" data-i18n="p_heating.app2">应用 2</span>
+          <span class="tl-chip" data-i18n="p_heating.app3">应用 3</span>
+          <span class="tl-chip" data-i18n="p_heating.app4">应用 4</span>
+          <span class="tl-chip" data-i18n="p_heating.app5">应用 5</span>
+          <span class="tl-chip" data-i18n="p_heating.app6">应用 6</span>
+          <span class="tl-chip" data-i18n="p_heating.app7">应用 7</span>
+        </div>
       </div>
     </section>
 
     <section class="tl-section">
+      <div class="tl-container-narrow">
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-spec-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.spec_variety">品种</th>
+                <th data-i18n="tbl.spec_size">规格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="tbl.wire_round">圆丝</td><td>Φ0.05–15 mm</td></tr>
+              <tr><td data-i18n="tbl.cold_rolled">冷轧带</td><td>δ0.05–2.5 mm × W ≤ 300 mm</td></tr>
+              <tr><td data-i18n="tbl.hot_rolled">热轧带</td><td>δ2–15 mm × W ≤ 500 mm</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-grade-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.grade_domestic">国内牌号</th>
+                <th data-i18n="tbl.grade_foreign">国外牌号</th>
+                <th data-i18n="tbl.grade_uns">UNS / 编号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Cr20Ni80</td><td>NICHROME 80/20</td><td>N06003</td></tr>
+              <tr><td>Cr30Ni70</td><td>NICHROME 70/30</td><td>—</td></tr>
+              <tr><td>Cr20Ni35</td><td>—</td><td>—</td></tr>
+              <tr><td>Cr15Ni60</td><td>NICHROME 60/15</td><td>—</td></tr>
+              <tr><td>Cr20Ni30</td><td>—</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="tl-section tl-section-alt">
       <div class="tl-container">
         <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_lines">对应产线</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10" data-stagger>
@@ -72,7 +135,11 @@
           </a>
           <a class="tl-card block" href="../production/drawing.html">
             <h3 data-i18n="lines.drawing_name">拉丝产线</h3>
-            <p data-i18n="lines.drawing_desc">丝材成型。</p>
+            <p data-i18n="lines.drawing_desc">全规格拉拔。</p>
+          </a>
+          <a class="tl-card block" href="../production/forging.html">
+            <h3 data-i18n="lines.forging_name">锻轧产线</h3>
+            <p data-i18n="lines.forging_desc">塑性变形优化组织。</p>
           </a>
         </div>
 

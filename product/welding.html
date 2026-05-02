@@ -25,8 +25,39 @@
   <div data-tl-nav-mount></div>
 
   <main id="main">
-    <section class="tl-page-hero">
-      <div class="tl-container">
+    <section class="tl-page-hero" style="position:relative;overflow:hidden;">
+      <div class="tl-hero-accent" aria-hidden="true">
+        <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="weld-grad" cx="0.85" cy="0.55" r="0.55">
+              <stop offset="0" stop-color="#0071e3" stop-opacity="0.18"/>
+              <stop offset="0.45" stop-color="#0071e3" stop-opacity="0.04"/>
+              <stop offset="1" stop-color="#0071e3" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="1200" height="480" fill="url(#weld-grad)"/>
+          <g stroke="#0071e3" stroke-opacity="0.22" stroke-width="0.8" stroke-linecap="round" transform="translate(1020 264)">
+            <line x1="0" y1="-160" x2="0" y2="-50"/>
+            <line x1="113" y1="-113" x2="35" y2="-35"/>
+            <line x1="160" y1="0" x2="50" y2="0"/>
+            <line x1="113" y1="113" x2="35" y2="35"/>
+            <line x1="0" y1="160" x2="0" y2="50"/>
+            <line x1="-113" y1="113" x2="-35" y2="35"/>
+            <line x1="-160" y1="0" x2="-50" y2="0"/>
+            <line x1="-113" y1="-113" x2="-35" y2="-35"/>
+            <line x1="55" y1="-150" x2="20" y2="-55" stroke-opacity="0.13"/>
+            <line x1="150" y1="-55" x2="55" y2="-20" stroke-opacity="0.13"/>
+            <line x1="150" y1="55" x2="55" y2="20" stroke-opacity="0.13"/>
+            <line x1="55" y1="150" x2="20" y2="55" stroke-opacity="0.13"/>
+            <line x1="-55" y1="150" x2="-20" y2="55" stroke-opacity="0.13"/>
+            <line x1="-150" y1="55" x2="-55" y2="20" stroke-opacity="0.13"/>
+            <line x1="-150" y1="-55" x2="-55" y2="-20" stroke-opacity="0.13"/>
+            <line x1="-55" y1="-150" x2="-20" y2="-55" stroke-opacity="0.13"/>
+            <circle r="6" fill="#0071e3" fill-opacity="0.30" stroke="none"/>
+          </g>
+        </svg>
+      </div>
+      <div class="tl-container" style="position:relative;z-index:1;">
         <p class="tl-section-eyebrow" data-i18n="products.eyebrow">产品系列</p>
         <h1 data-i18n="p_welding.title">焊接材料</h1>
         <p data-i18n="p_welding.lead">产品概览</p>
@@ -43,26 +74,86 @@
 
     <section class="tl-section">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
-        <ul class="space-y-2 text-tl-secondary mt-6 tl-fade-in" style="font-size:1.0625rem;line-height:1.6;">
-          <li>· <span data-i18n="p_welding.app1">应用 1</span></li>
-          <li>· <span data-i18n="p_welding.app2">应用 2</span></li>
-          <li>· <span data-i18n="p_welding.app3">应用 3</span></li>
-        </ul>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_overview">产品概述</h2>
+        <div class="tl-prose tl-fade-in mt-6">
+          <p data-i18n="p_welding.intro1">介绍 1</p>
+          <p data-i18n="p_welding.intro2">介绍 2</p>
+          <p data-i18n="p_welding.intro3">介绍 3</p>
+        </div>
       </div>
     </section>
 
     <section class="tl-section tl-section-alt">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
-        <p class="tl-section-lead tl-fade-in mt-6" data-i18n="p_welding.spec">规格</p>
-
-        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
-        <p class="tl-section-lead tl-fade-in mt-6 font-mono text-tl-text" data-i18n="p_welding.grade" style="letter-spacing:0;">牌号</p>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
+        <div class="tl-chip-row tl-fade-in mt-6">
+          <span class="tl-chip" data-i18n="p_welding.app1">应用 1</span>
+          <span class="tl-chip" data-i18n="p_welding.app2">应用 2</span>
+          <span class="tl-chip" data-i18n="p_welding.app3">应用 3</span>
+          <span class="tl-chip" data-i18n="p_welding.app4">应用 4</span>
+          <span class="tl-chip" data-i18n="p_welding.app5">应用 5</span>
+          <span class="tl-chip" data-i18n="p_welding.app6">应用 6</span>
+          <span class="tl-chip" data-i18n="p_welding.app7">应用 7</span>
+        </div>
       </div>
     </section>
 
     <section class="tl-section">
+      <div class="tl-container-narrow">
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-spec-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.spec_variety">品种</th>
+                <th data-i18n="tbl.spec_size">规格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="tbl.wire_round">圆丝</td><td>Φ0.2–15 mm</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-grade-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.grade_domestic">国内牌号</th>
+                <th data-i18n="tbl.grade_foreign">国外牌号</th>
+                <th data-i18n="tbl.grade_uns">UNS / 编号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>ERNi-1</td><td>INCONEL 61</td><td>N02061</td></tr>
+              <tr><td>ERNiCu-7</td><td>MONEL 60</td><td>N04060</td></tr>
+              <tr><td>ERNiCr-3</td><td>INCONEL 82</td><td>N06082</td></tr>
+              <tr><td>ERNiCr-4</td><td>INCONEL 92</td><td>N07092</td></tr>
+              <tr><td>ERNiCrFe-5</td><td>INCONEL 62</td><td>N06062</td></tr>
+              <tr><td>ERNiCrFe-6</td><td>INCONEL 65</td><td>N07069</td></tr>
+              <tr><td>ERNiCrFe-7</td><td>INCONEL 52</td><td>N06052</td></tr>
+              <tr><td>ERNiCrFe-7A</td><td>INCONEL 52M</td><td>N06054</td></tr>
+              <tr><td>ERNiCrFe-8</td><td>INCONEL 718</td><td>N07718</td></tr>
+              <tr><td>ERNiCrMo-2</td><td>HASTELLOY G</td><td>N06002</td></tr>
+              <tr><td>ERNiCrMo-3</td><td>INCONEL 625</td><td>N06625</td></tr>
+              <tr><td>ERNiCrMo-4</td><td>HASTELLOY C-276</td><td>N10276</td></tr>
+              <tr><td>ERNiCrMo-7</td><td>HASTELLOY C-4</td><td>N06455</td></tr>
+              <tr><td>ERNiCrMo-9</td><td>INCONEL G-50</td><td>N06985</td></tr>
+              <tr><td>ERNiCrMo-10</td><td>HASTELLOY C-22</td><td>N06022</td></tr>
+              <tr><td>ERNiCrMo-13</td><td>HASTELLOY C-2000</td><td>N06200</td></tr>
+              <tr><td>ERNiCrMo-14</td><td>HASTELLOY C-22HS</td><td>N06059</td></tr>
+              <tr><td>ERNiCrMo-15</td><td>HYBRID-BC1</td><td>N06030</td></tr>
+              <tr><td>ERNiMo-1</td><td>HASTELLOY B</td><td>N10001</td></tr>
+              <tr><td>ERNiMo-7</td><td>HASTELLOY B-2</td><td>N10665</td></tr>
+              <tr><td>ERNiCrCoMo-1</td><td>INCONEL 617</td><td>N06617</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="tl-section tl-section-alt">
       <div class="tl-container">
         <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_lines">对应产线</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10" data-stagger>
@@ -72,7 +163,7 @@
           </a>
           <a class="tl-card block" href="../production/drawing.html">
             <h3 data-i18n="lines.drawing_name">拉丝产线</h3>
-            <p data-i18n="lines.drawing_desc">焊丝成型。</p>
+            <p data-i18n="lines.drawing_desc">全规格拉拔。</p>
           </a>
         </div>
 

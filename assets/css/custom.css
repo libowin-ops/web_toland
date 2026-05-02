@@ -1258,3 +1258,146 @@ ul { list-style: none; padding: 0; margin: 0; }
   .tl-hero-arrow { bottom: 28px; }
   .tl-page-hero { padding: 7rem 20px 3.5rem; }
 }
+
+/* ============================================
+   P21 · 产品详情:概述 / 应用 chips / 规格表 / 牌号表 / SVG 装饰
+   ============================================ */
+
+/* 概述段落 */
+.tl-prose {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  max-width: 720px;
+}
+.tl-prose p + p { margin-top: 1rem; }
+.tl-prose strong { color: var(--text-primary); font-weight: 600; }
+
+/* 应用 chips */
+.tl-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin-top: 1.25rem;
+}
+.tl-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  border: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+/* 表格容器(横向滚动) */
+.tl-table-wrap {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  border-radius: 14px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-elevated);
+  -webkit-overflow-scrolling: touch;
+}
+.tl-table-wrap::-webkit-scrollbar { height: 8px; }
+.tl-table-wrap::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 4px; }
+
+/* 规格表 / 牌号表 共用基础 */
+.tl-spec-table,
+.tl-grade-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+.tl-spec-table thead th,
+.tl-grade-table thead th {
+  text-align: left;
+  padding: 14px 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: var(--bg-section-alt);
+  border-bottom: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  white-space: nowrap;
+}
+.tl-spec-table tbody td,
+.tl-grade-table tbody td {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+.tl-spec-table tbody tr:last-child td,
+.tl-grade-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.tl-spec-table tbody tr:hover td,
+.tl-grade-table tbody tr:hover td {
+  background: var(--bg-subtle);
+}
+
+/* 规格表:第一列加粗,第二列允许 muted */
+.tl-spec-table tbody td:first-child {
+  color: var(--text-primary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* 牌号表:全表 monospace,代号读起来更工整 */
+.tl-grade-table tbody td {
+  font-family: 'SF Mono', 'Menlo', 'Monaco', 'Roboto Mono', ui-monospace, monospace;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
+}
+.tl-grade-table tbody td:nth-child(n+2) {
+  color: var(--text-secondary);
+}
+.tl-grade-table tbody td.tl-em-dash {
+  color: var(--text-muted);
+}
+
+/* 表格摘要行(数量提示) */
+.tl-table-meta {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+  letter-spacing: 0.02em;
+}
+
+/* 产品 hero 装饰 SVG 容器 */
+.tl-hero-accent {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0.55;
+}
+.tl-hero-accent svg {
+  position: absolute;
+  right: -8%;
+  top: 12%;
+  width: 56%;
+  max-width: 720px;
+  height: auto;
+}
+.tl-page-hero { position: relative; }
+.tl-page-hero > .tl-container { position: relative; z-index: 1; }
+
+@media (max-width: 768px) {
+  .tl-hero-accent svg {
+    right: -30%;
+    top: auto;
+    bottom: -6%;
+    width: 110%;
+    opacity: 0.6;
+  }
+  .tl-spec-table thead th,
+  .tl-grade-table thead th { padding: 12px 14px; }
+  .tl-spec-table tbody td,
+  .tl-grade-table tbody td { padding: 10px 14px; }
+}

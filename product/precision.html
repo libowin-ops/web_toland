@@ -25,8 +25,26 @@
   <div data-tl-nav-mount></div>
 
   <main id="main">
-    <section class="tl-page-hero">
-      <div class="tl-container">
+    <section class="tl-page-hero" style="position:relative;overflow:hidden;">
+      <div class="tl-hero-accent" aria-hidden="true">
+        <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="pr-grad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#0071e3" stop-opacity="0.10"/>
+              <stop offset="1" stop-color="#0071e3" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="480" fill="url(#pr-grad)"/>
+          <g fill="none" stroke="#0071e3" stroke-opacity="0.20" stroke-width="1">
+            <path d="M0 240 Q 75 170, 150 240 T 300 240 T 450 240 T 600 240 T 750 240 T 900 240 T 1050 240 T 1200 240"/>
+            <path d="M0 280 Q 75 210, 150 280 T 300 280 T 450 280 T 600 280 T 750 280 T 900 280 T 1050 280 T 1200 280" stroke-opacity="0.13"/>
+            <path d="M0 200 Q 75 130, 150 200 T 300 200 T 450 200 T 600 200 T 750 200 T 900 200 T 1050 200 T 1200 200" stroke-opacity="0.13"/>
+            <path d="M0 320 Q 100 240, 200 320 T 400 320 T 600 320 T 800 320 T 1000 320 T 1200 320" stroke-opacity="0.10"/>
+            <path d="M0 160 Q 100 80, 200 160 T 400 160 T 600 160 T 800 160 T 1000 160 T 1200 160" stroke-opacity="0.10"/>
+          </g>
+        </svg>
+      </div>
+      <div class="tl-container" style="position:relative;z-index:1;">
         <p class="tl-section-eyebrow" data-i18n="products.eyebrow">产品系列</p>
         <h1 data-i18n="p_precision.title">精密合金</h1>
         <p data-i18n="p_precision.lead">产品概览</p>
@@ -43,26 +61,90 @@
 
     <section class="tl-section">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
-        <ul class="space-y-2 text-tl-secondary mt-6 tl-fade-in" style="font-size:1.0625rem;line-height:1.6;">
-          <li>· <span data-i18n="p_precision.app1">应用 1</span></li>
-          <li>· <span data-i18n="p_precision.app2">应用 2</span></li>
-          <li>· <span data-i18n="p_precision.app3">应用 3</span></li>
-        </ul>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_overview">产品概述</h2>
+        <div class="tl-prose tl-fade-in mt-6">
+          <p data-i18n="p_precision.intro1">介绍 1</p>
+          <p data-i18n="p_precision.intro2">介绍 2</p>
+          <p data-i18n="p_precision.intro3">介绍 3</p>
+        </div>
       </div>
     </section>
 
     <section class="tl-section tl-section-alt">
       <div class="tl-container-narrow">
-        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
-        <p class="tl-section-lead tl-fade-in mt-6" data-i18n="p_precision.spec">规格</p>
-
-        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
-        <p class="tl-section-lead tl-fade-in mt-6 font-mono text-tl-text" data-i18n="p_precision.grade" style="letter-spacing:0;">牌号</p>
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_apps">典型应用</h2>
+        <div class="tl-chip-row tl-fade-in mt-6">
+          <span class="tl-chip" data-i18n="p_precision.app1">应用 1</span>
+          <span class="tl-chip" data-i18n="p_precision.app2">应用 2</span>
+          <span class="tl-chip" data-i18n="p_precision.app3">应用 3</span>
+          <span class="tl-chip" data-i18n="p_precision.app4">应用 4</span>
+          <span class="tl-chip" data-i18n="p_precision.app5">应用 5</span>
+          <span class="tl-chip" data-i18n="p_precision.app6">应用 6</span>
+          <span class="tl-chip" data-i18n="p_precision.app7">应用 7</span>
+        </div>
       </div>
     </section>
 
     <section class="tl-section">
+      <div class="tl-container-narrow">
+        <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_specs">规格范围</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-spec-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.spec_variety">品种</th>
+                <th data-i18n="tbl.spec_subtype">子类</th>
+                <th data-i18n="tbl.spec_size">规格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="tbl.bar">棒材</td><td data-i18n="tbl.bar_hot">热轧棒</td><td>Φ16–200 mm</td></tr>
+              <tr><td data-i18n="tbl.bar">棒材</td><td data-i18n="tbl.bar_cold">冷拉棒</td><td>Φ5–50 mm</td></tr>
+              <tr><td data-i18n="tbl.bar">棒材</td><td data-i18n="tbl.bar_forge">锻棒</td><td>Φ200–500 mm</td></tr>
+              <tr><td data-i18n="tbl.wire">丝材</td><td data-i18n="tbl.wire_round">圆丝</td><td>Φ0.05–12 mm</td></tr>
+              <tr><td data-i18n="tbl.strip">带材</td><td data-i18n="tbl.cold_rolled">冷轧</td><td>δ0.05–2.5 mm × W ≤ 300 mm</td></tr>
+              <tr><td data-i18n="tbl.strip">带材</td><td data-i18n="tbl.hot_rolled">热轧</td><td>δ2–15 mm × W ≤ 500 mm</td></tr>
+              <tr><td data-i18n="tbl.plate">板材</td><td data-i18n="tbl.cold_rolled">冷轧</td><td>δ0.5–12 mm</td></tr>
+              <tr><td data-i18n="tbl.plate">板材</td><td data-i18n="tbl.hot_rolled">热轧</td><td>δ4–50 mm</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="tl-section-title tl-fade-in mt-16" data-i18n="products.detail_grades">常见牌号</h2>
+        <div class="tl-table-wrap tl-fade-in mt-6">
+          <table class="tl-grade-table">
+            <thead>
+              <tr>
+                <th data-i18n="tbl.grade_domestic">国内牌号</th>
+                <th data-i18n="tbl.grade_foreign">国外牌号</th>
+                <th data-i18n="tbl.grade_uns">UNS / 编号</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>4J29</td><td>KOVAR</td><td>K94610</td></tr>
+              <tr><td>4J32</td><td>SUPER INVAR</td><td>—</td></tr>
+              <tr><td>4J36</td><td>INVAR 36</td><td>K93600</td></tr>
+              <tr><td>4J40</td><td>—</td><td>—</td></tr>
+              <tr><td>4J42</td><td>GLASS SEAL 42</td><td>K94100</td></tr>
+              <tr><td>4J50</td><td>—</td><td>—</td></tr>
+              <tr><td>4J52</td><td>—</td><td>—</td></tr>
+              <tr><td>1J22</td><td>PERMENDUR 49</td><td>—</td></tr>
+              <tr><td>1J50</td><td>—</td><td>—</td></tr>
+              <tr><td>1J51</td><td>—</td><td>—</td></tr>
+              <tr><td>1J79</td><td>PERMALLOY 80</td><td>—</td></tr>
+              <tr><td>1J85</td><td>—</td><td>—</td></tr>
+              <tr><td>3J21</td><td>ELINVAR</td><td>—</td></tr>
+              <tr><td>3J53</td><td>NI-SPAN-C 902</td><td>N09902</td></tr>
+              <tr><td>6J11</td><td>MANGANIN</td><td>—</td></tr>
+              <tr><td>6J13</td><td>CONSTANTAN</td><td>—</td></tr>
+              <tr><td>6J20</td><td>—</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="tl-section tl-section-alt">
       <div class="tl-container">
         <h2 class="tl-section-title tl-fade-in" data-i18n="products.detail_lines">对应产线</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10" data-stagger>
@@ -76,7 +158,7 @@
           </a>
           <a class="tl-card block" href="../production/drawing.html">
             <h3 data-i18n="lines.drawing_name">拉丝产线</h3>
-            <p data-i18n="lines.drawing_desc">丝材拉拔。</p>
+            <p data-i18n="lines.drawing_desc">全规格拉拔。</p>
           </a>
         </div>
 
