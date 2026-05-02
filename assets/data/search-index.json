@@ -1,0 +1,274 @@
+{
+  "items": [
+    {
+      "url": "/",
+      "tags": ["home", "首页"],
+      "title": { "zh": "首页 · 图南合金", "en": "Home · Toland Alloy" },
+      "desc": {
+        "zh": "高端装备用高性能合金材料及制品提供方,深耕航空航天、船舶、能源等领域。",
+        "en": "High-performance alloy materials for aerospace, marine and energy industries."
+      }
+    },
+    {
+      "url": "/about/",
+      "tags": ["about", "关于", "公司"],
+      "title": { "zh": "关于我们 · 图南合金", "en": "About · Toland Alloy" },
+      "desc": {
+        "zh": "1991 年创立,2020 年深交所创业板上市,股票代码 300855,聚焦高性能合金研发与制造。",
+        "en": "Founded 1991, listed on Shenzhen ChiNext (300855) in 2020, focused on high-performance alloys."
+      }
+    },
+    {
+      "url": "/about/path.html",
+      "tags": ["history", "历程"],
+      "title": { "zh": "发展历程 · 关于我们", "en": "History · About" },
+      "desc": {
+        "zh": "从 1991 年创立到 2020 年上市,图南合金的关键里程碑。",
+        "en": "Key milestones from founding in 1991 to public listing in 2020."
+      }
+    },
+    {
+      "url": "/about/structure.html",
+      "tags": ["structure", "组织"],
+      "title": { "zh": "组织架构 · 关于我们", "en": "Organization · About" },
+      "desc": {
+        "zh": "围绕研发、制造、质量、销售四条主线展开的专业团队。",
+        "en": "A specialized team structured along R&D, manufacturing, quality and sales."
+      }
+    },
+    {
+      "url": "/about/honor.html",
+      "tags": ["honor", "荣誉", "资质"],
+      "title": { "zh": "荣誉资质 · 关于我们", "en": "Honors · About" },
+      "desc": {
+        "zh": "国家高新技术企业、省级技术中心、ISO 体系等核心资质与荣誉。",
+        "en": "National high-tech enterprise, provincial tech center, ISO certifications and more."
+      }
+    },
+    {
+      "url": "/product/",
+      "tags": ["products", "产品"],
+      "title": { "zh": "产品系列 · 图南合金", "en": "Products · Toland Alloy" },
+      "desc": {
+        "zh": "七大产品系列,覆盖铸造高温合金、变形高温合金、特种不锈钢、镍基耐蚀合金、精密合金、焊接材料、高电阻电热合金。",
+        "en": "Seven product systems including cast/wrought superalloys, stainless steel, nickel alloys, precision and welding materials."
+      }
+    },
+    {
+      "url": "/product/casting.html",
+      "tags": ["casting", "铸造", "高温合金", "K403", "K418", "K424"],
+      "title": { "zh": "铸造高温合金 · 产品", "en": "Cast Superalloys · Products" },
+      "desc": {
+        "zh": "K403/K418/K424 等牌号,航空发动机叶片、燃气轮机热端部件用精密铸造合金。",
+        "en": "K403/K418/K424 grades, precision-cast superalloys for aero engine blades and gas turbines."
+      }
+    },
+    {
+      "url": "/product/deformed.html",
+      "tags": ["deformed", "变形", "高温合金", "GH4169", "GH4145"],
+      "title": { "zh": "变形高温合金 · 产品", "en": "Wrought Superalloys · Products" },
+      "desc": {
+        "zh": "GH3030/GH4169/GH4145 等牌号,用于航空发动机盘件、紧固件、高温管路。",
+        "en": "GH3030/GH4169/GH4145 grades for aero engine disks, fasteners and high-temperature piping."
+      }
+    },
+    {
+      "url": "/product/stainless.html",
+      "tags": ["stainless", "不锈钢"],
+      "title": { "zh": "特种不锈钢 · 产品", "en": "Specialty Stainless Steel · Products" },
+      "desc": {
+        "zh": "0Cr17Ni4Cu4Nb 等牌号,服务核电、船舶、化工与高端交通装备。",
+        "en": "0Cr17Ni4Cu4Nb and related grades for nuclear, marine, chemical and high-end transit."
+      }
+    },
+    {
+      "url": "/product/nickel.html",
+      "tags": ["nickel", "镍基", "耐蚀", "N06625", "N10276"],
+      "title": { "zh": "镍基耐蚀合金 · 产品", "en": "Nickel-Based Corrosion Alloys · Products" },
+      "desc": {
+        "zh": "N08825/N06600/N06625/N10276 等,抵御复杂腐蚀介质的镍基合金。",
+        "en": "N08825/N06600/N06625/N10276 nickel alloys engineered for corrosive service."
+      }
+    },
+    {
+      "url": "/product/precision.html",
+      "tags": ["precision", "精密合金", "4J29", "4J36", "1J50"],
+      "title": { "zh": "精密合金 · 产品", "en": "Precision Alloys · Products" },
+      "desc": {
+        "zh": "4J29/4J36/1J50 等,具备特殊磁性与膨胀系数的精密合金,服务仪器仪表。",
+        "en": "4J29/4J36/1J50 precision alloys with engineered magnetic and expansion properties."
+      }
+    },
+    {
+      "url": "/product/welding.html",
+      "tags": ["welding", "焊接", "焊丝", "焊条"],
+      "title": { "zh": "焊接材料 · 产品", "en": "Welding Materials · Products" },
+      "desc": {
+        "zh": "HGH1131/HGH4145/ERNi-1 等,匹配各类高温合金母材的焊丝与焊条。",
+        "en": "HGH1131/HGH4145/ERNi-1 welding wires and electrodes matched to superalloy substrates."
+      }
+    },
+    {
+      "url": "/product/heating.html",
+      "tags": ["heating", "电热", "Cr20Ni80", "Cr15Ni60"],
+      "title": { "zh": "高电阻电热合金 · 产品", "en": "Heating Alloys · Products" },
+      "desc": {
+        "zh": "Cr20Ni80/Cr15Ni60 等高电阻电热合金,用于工业加热与高温电器。",
+        "en": "Cr20Ni80/Cr15Ni60 high-resistance heating alloys for industrial furnaces."
+      }
+    },
+    {
+      "url": "/production/",
+      "tags": ["production", "产线", "lines"],
+      "title": { "zh": "产线装备 · 图南合金", "en": "Production · Toland Alloy" },
+      "desc": {
+        "zh": "冶炼、铸造、锻轧、拉丝、制管五条产线一气呵成的完整工艺闭环。",
+        "en": "Smelting, casting, forging, drawing, tubing — five lines forming a complete process loop."
+      }
+    },
+    {
+      "url": "/production/smelting.html",
+      "tags": ["smelting", "冶炼", "VIM", "VAR", "ESR"],
+      "title": { "zh": "特种冶炼产线 · 产线", "en": "Specialty Smelting · Production" },
+      "desc": {
+        "zh": "VIM/VAR/ESR 等先进熔炼工艺,确保合金原子级均匀。",
+        "en": "VIM/VAR/ESR advanced melting techniques delivering atomic-level uniformity."
+      }
+    },
+    {
+      "url": "/production/casting.html",
+      "tags": ["casting", "铸造", "单晶", "定向凝固"],
+      "title": { "zh": "铸造产线 · 产线", "en": "Casting · Production" },
+      "desc": {
+        "zh": "熔模精密铸造、定向凝固、单晶生长能力,服务高温段叶片与复杂结构件。",
+        "en": "Investment casting, directional solidification and single-crystal capability for hot-section blades."
+      }
+    },
+    {
+      "url": "/production/forging.html",
+      "tags": ["forging", "锻造", "锻轧"],
+      "title": { "zh": "锻轧产线 · 产线", "en": "Forging & Rolling · Production" },
+      "desc": {
+        "zh": "通过塑性变形优化材料微观组织与力学性能,提升综合服役表现。",
+        "en": "Plastic deformation refining microstructure and lifting mechanical performance."
+      }
+    },
+    {
+      "url": "/production/drawing.html",
+      "tags": ["drawing", "拉丝", "wire"],
+      "title": { "zh": "拉丝产线 · 产线", "en": "Wire Drawing · Production" },
+      "desc": {
+        "zh": "从棒坯到细丝的全规格拉拔成型,涵盖广泛直径与表面要求。",
+        "en": "Full-spectrum drawing from billet to fine wire across diameter ranges."
+      }
+    },
+    {
+      "url": "/production/tubing.html",
+      "tags": ["tubing", "制管", "tube"],
+      "title": { "zh": "制管产线 · 产线", "en": "Tube Manufacturing · Production" },
+      "desc": {
+        "zh": "高精度无缝管材生产,服务能源、石化与航空领域。",
+        "en": "High-precision seamless tubes for energy, petrochemical and aerospace applications."
+      }
+    },
+    {
+      "url": "/technology/",
+      "tags": ["technology", "科技", "创新"],
+      "title": { "zh": "科技创新 · 图南合金", "en": "Technology · Toland Alloy" },
+      "desc": {
+        "zh": "真空冶炼、定向凝固、变形加工等核心工艺,达国际先进水平。",
+        "en": "Core technologies in vacuum melting, directional solidification, and deformation processing."
+      }
+    },
+    {
+      "url": "/technology/center.html",
+      "tags": ["center", "技术中心"],
+      "title": { "zh": "技术中心 · 科技创新", "en": "Tech Center · Technology" },
+      "desc": {
+        "zh": "省级企业技术中心,与多所高校建立产学研合作。",
+        "en": "Provincial-level enterprise technology center with industry-academia-research partnerships."
+      }
+    },
+    {
+      "url": "/news/",
+      "tags": ["news", "新闻"],
+      "title": { "zh": "新闻动态 · 图南合金", "en": "News · Toland Alloy" },
+      "desc": {
+        "zh": "公司动态、行业资讯、公司公告。",
+        "en": "Company updates, industry insights and official notices."
+      }
+    },
+    {
+      "url": "/news/post-listing.html",
+      "tags": ["news", "上市", "300855", "ipo"],
+      "title": { "zh": "图南股份在深交所创业板成功上市", "en": "Toland Lists on Shenzhen ChiNext" },
+      "desc": {
+        "zh": "2020 年 7 月 23 日,公司在深交所创业板挂牌,股票代码 300855。",
+        "en": "On July 23, 2020 the company listed on Shenzhen ChiNext under stock code 300855."
+      }
+    },
+    {
+      "url": "/news/post-innovation.html",
+      "tags": ["news", "创新"],
+      "title": { "zh": "第一动力:以创新引领发展", "en": "Innovation as the Primary Driver" },
+      "desc": {
+        "zh": "回顾创新发展进程,瞻望中国制造业的未来路径。",
+        "en": "Reflections on innovation-led development and the future of Chinese manufacturing."
+      }
+    },
+    {
+      "url": "/news/post-trends.html",
+      "tags": ["news", "trends", "行业趋势"],
+      "title": { "zh": "全球制造业的六大重要趋势", "en": "Six Trends Shaping Global Manufacturing" },
+      "desc": {
+        "zh": "智能化、高端化、绿色化、自动化、服务化、品牌化。",
+        "en": "Smart · premium · green · automated · service-oriented · brand-led."
+      }
+    },
+    {
+      "url": "/careers/",
+      "tags": ["careers", "招聘"],
+      "title": { "zh": "人才招聘 · 图南合金", "en": "Careers · Toland Alloy" },
+      "desc": {
+        "zh": "材料、冶金、机械、化学等方向的工程师与管理者职位。",
+        "en": "Engineering and management roles across materials, metallurgy and process disciplines."
+      }
+    },
+    {
+      "url": "/contact/",
+      "tags": ["contact", "联系"],
+      "title": { "zh": "联系我们 · 图南合金", "en": "Contact · Toland Alloy" },
+      "desc": {
+        "zh": "公司地址、电话、商务/投资者/人力资源邮箱与在线咨询。",
+        "en": "Address, phone, sales/IR/HR emails and online inquiry."
+      }
+    },
+    {
+      "url": "/news/company.html",
+      "tags": ["news", "公司动态", "company"],
+      "title": { "zh": "公司动态 · 新闻动态", "en": "Company News · News" },
+      "desc": {
+        "zh": "公司发展、上市、产能扩张等公司动态分类页。",
+        "en": "Company milestones, listings, and capacity expansion announcements."
+      }
+    },
+    {
+      "url": "/news/industry.html",
+      "tags": ["news", "行业资讯", "industry"],
+      "title": { "zh": "行业资讯 · 新闻动态", "en": "Industry News · News" },
+      "desc": {
+        "zh": "高温合金、特种钢、精密合金行业的趋势观察与技术报道。",
+        "en": "Industry trend observations and technical coverage of superalloys."
+      }
+    },
+    {
+      "url": "/news/notice.html",
+      "tags": ["news", "公司公告", "notice", "300855"],
+      "title": { "zh": "公司公告 · 新闻动态", "en": "Notices · News" },
+      "desc": {
+        "zh": "深交所创业板 300855 的信息披露公告入口。",
+        "en": "Shenzhen ChiNext 300855 official disclosure entry point."
+      }
+    }
+  ]
+}

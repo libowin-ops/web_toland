@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>行业资讯 · 新闻动态 · 图南合金</title>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230071e3'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' fill='%23fff' font-family='-apple-system,Inter,sans-serif' font-weight='600'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { 'tl-bg':'#ffffff','tl-elevated':'#ffffff','tl-subtle':'#f5f5f7','tl-text':'#1d1d1f','tl-secondary':'#6e6e73','tl-muted':'#86868b','tl-blue':'#0071e3','tl-cyan':'#0066cc' },
+      maxWidth: { 'tl': '1200px' },
+      fontFamily: { sans: ['Inter','SF Pro Display','-apple-system','BlinkMacSystemFont','PingFang SC','Helvetica Neue','sans-serif'] },
+    }}};
+  </script>
+  <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+<body>
+  <noscript><div class="tl-noscript">本站需开启 JavaScript 以获得完整体验 / Please enable JavaScript for the full experience.</div></noscript>
+
+  <div data-tl-nav-mount></div>
+
+  <main id="main">
+    <section class="tl-page-hero">
+      <div class="tl-container">
+        <p class="tl-section-eyebrow" data-i18n="news.eyebrow">新闻动态</p>
+        <h1 data-i18n="news.tab_industry">行业资讯</h1>
+        <p data-i18n="news.cat_industry_lead">高温合金、特种钢、精密合金行业的趋势观察与技术报道。</p>
+      </div>
+    </section>
+
+    <nav class="tl-breadcrumb" aria-label="breadcrumb">
+      <a href="../" data-i18n="crumb.home">首页</a>
+      <span class="tl-breadcrumb-sep">/</span>
+      <a href="../news/" data-i18n="crumb.news">新闻动态</a>
+      <span class="tl-breadcrumb-sep">/</span>
+      <span data-i18n="news.tab_industry">行业资讯</span>
+    </nav>
+
+    <section class="tl-section">
+      <div class="tl-container">
+        <div class="tl-news-tabs flex flex-wrap gap-3 mb-10">
+          <a href="../news/" class="tl-news-tab" data-i18n="news.tab_all">全部</a>
+          <a href="../news/company.html" class="tl-news-tab" data-i18n="news.tab_company">公司动态</a>
+          <a href="../news/industry.html" class="tl-news-tab is-active" data-i18n="news.tab_industry">行业资讯</a>
+          <a href="../news/notice.html" class="tl-news-tab" data-i18n="news.tab_notice">公司公告</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" data-stagger>
+          <a href="../news/post-innovation.html" class="tl-news-card block">
+            <div class="tl-news-date" data-i18n="news.item2_date">2020.06.10</div>
+            <h3 data-i18n="news.item2_title">第一动力:以创新引领发展</h3>
+            <p data-i18n="news.item2_desc">回顾创新发展进程,瞻望中国制造业的未来路径。</p>
+            <span class="tl-card-link" data-i18n="news.read_more">阅读全文 →</span>
+          </a>
+          <a href="../news/post-trends.html" class="tl-news-card block">
+            <div class="tl-news-date" data-i18n="news.item3_date">2020.05.26</div>
+            <h3 data-i18n="news.item3_title">全球制造业的六大重要趋势</h3>
+            <p data-i18n="news.item3_desc">智能化、高端化、绿色化、自动化、服务化、品牌化共同塑造制造业新格局。</p>
+            <span class="tl-card-link" data-i18n="news.read_more">阅读全文 →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-tl-footer-mount></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/partials.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/parallax.js"></script>
+  <script src="../assets/js/search.js"></script>
+  <script src="../assets/js/chat.js"></script>
+</body>
+</html>

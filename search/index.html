@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>搜索 · 图南合金</title>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230071e3'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' fill='%23fff' font-family='-apple-system,Inter,sans-serif' font-weight='600'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { 'tl-bg':'#ffffff','tl-elevated':'#ffffff','tl-subtle':'#f5f5f7','tl-text':'#1d1d1f','tl-secondary':'#6e6e73','tl-muted':'#86868b','tl-blue':'#0071e3','tl-cyan':'#0066cc' },
+      maxWidth: { 'tl': '1200px' },
+      fontFamily: { sans: ['Inter','SF Pro Display','-apple-system','BlinkMacSystemFont','PingFang SC','Helvetica Neue','sans-serif'] },
+    }}};
+  </script>
+  <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+<body>
+  <noscript><div class="tl-noscript">本站需开启 JavaScript 以获得完整体验 / Please enable JavaScript for the full experience.</div></noscript>
+
+  <div data-tl-nav-mount></div>
+
+  <main id="main">
+    <section class="tl-page-hero">
+      <div class="tl-container">
+        <p class="tl-section-eyebrow" data-i18n="search.eyebrow">搜索</p>
+        <h1 data-i18n="search.page_title">搜索图南合金</h1>
+        <p data-i18n="search.page_lead">在产品、产线、技术、关于、新闻等内容中进行全站检索。</p>
+      </div>
+    </section>
+
+    <nav class="tl-breadcrumb" aria-label="breadcrumb">
+      <a href="../" data-i18n="crumb.home">首页</a>
+      <span class="tl-breadcrumb-sep">/</span>
+      <span data-i18n="search.eyebrow">搜索</span>
+    </nav>
+
+    <section class="tl-section">
+      <div class="tl-container-narrow">
+        <div class="tl-search-page">
+          <input type="search" class="tl-search-input-page" id="search-page-input" data-i18n="search.placeholder" data-i18n-attr="placeholder" placeholder="输入关键词,例如:GH4169 / 不锈钢 / 真空冶炼" autofocus>
+          <p class="tl-search-meta mt-4" id="search-page-meta" data-i18n="search.tip">提示:支持产品名称、规格牌号、行业关键词。</p>
+        </div>
+
+        <div id="search-page-results" class="tl-search-page-results mt-10"></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-tl-footer-mount></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="../assets/js/partials.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/parallax.js"></script>
+  <script src="../assets/js/search.js"></script>
+  <script src="../assets/js/search-page.js"></script>
+  <script src="../assets/js/chat.js"></script>
+</body>
+</html>
