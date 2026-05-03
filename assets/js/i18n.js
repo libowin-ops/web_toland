@@ -39,7 +39,7 @@
       'hero.title': '为高端装备,\n锻造合金的极限。',
       'hero.subtitle': '高端装备用高性能合金材料及制品提供方。深耕航空航天、船舶、能源等关键领域三十余年。',
       'hero.cta_primary': '了解产品',
-      'hero.cta_secondary': '关于图南',
+      'hero.cta_secondary': '联系我们',
 
       // About 首页板块
       'about.eyebrow': '关于图南',
@@ -497,6 +497,9 @@
       'footer.tech_center': '技术中心',
       'footer.copyright': '© 2026 江苏图南合金股份有限公司 版权所有',
       'footer.icp': '苏公网安备 32118102000283 号',
+      'footer.contact_phone': '+86 0510-8631-8838',
+      'footer.contact_email': 'sales@toland-alloy.com',
+      'footer.contact_address': '江苏省丹阳市凤林大道 9 号',
 
       // Breadcrumb
       'crumb.home': '首页',
@@ -535,7 +538,7 @@
       'hero.title': 'Engineered alloys.\nFor what matters most.',
       'hero.subtitle': 'A trusted partner for high-performance alloy materials in aerospace, marine, and energy industries — for more than three decades.',
       'hero.cta_primary': 'Explore Products',
-      'hero.cta_secondary': 'About Toland',
+      'hero.cta_secondary': 'Contact Us',
 
       'about.eyebrow': 'About Toland',
       'about.title': 'Three decades.\nOne purpose.',
@@ -959,6 +962,9 @@
       'footer.tech_center': 'Tech Center',
       'footer.copyright': '© 2026 Jiangsu Toland Alloy Co., Ltd. All rights reserved.',
       'footer.icp': 'ICP Filing No. 32118102000283',
+      'footer.contact_phone': '+86 0510-8631-8838',
+      'footer.contact_email': 'sales@toland-alloy.com',
+      'footer.contact_address': '9 Fenglin Avenue, Danyang, Jiangsu',
 
       'crumb.home': 'Home',
       'crumb.about': 'About',

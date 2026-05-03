@@ -209,6 +209,64 @@
 - [x] i18n 对称性 419/419,所有 product 页 data-i18n 键 100% 命中
 - [x] 31/31 HTML 全部 HTTP 200(本地)
 
+## P22 · 视觉美化升级(SVG 字标 + 动态 Hero + 全站微交互)
+
+> 用户选定方向:**SVG 几何字标** · **纯 SVG 动态 Hero** · 范围 = 首页 Hero + 首页其他板块 + 顶栏页脚 + 全站微交互。
+> 不引第三方图,不下载源站素材,完全自绘 SVG 保证版权干净 + 加载迅速。
+
+### P22.1 · 品牌字标(Logo)
+- [x] 在 `assets/images/` 新建 `logo.svg` — 32×32 几何 T 字标(矩形 + 内角线条,纯描边),单色 #1d1d1f / 反白 #fff 两版本
+- [x] 在 `assets/images/` 新建 `logo-mark.svg` — 含 "1991" 印章,用于页脚 / OG 卡
+- [x] 升级 favicon:替换 31 个 HTML 内嵌 base64 'T' favicon 为更精致的字标版本(脚本批量替换)
+- [x] `partials.js` NAV_HTML:在 `<a href=BASE>` 内插入 inline SVG logo + 现有文字双行,移动端只显示 SVG
+- [x] `partials.js` FOOTER_HTML:同步加 logo SVG
+- [x] 1200×630 OG 分享卡 SVG(logo + slogan),`og-cover.svg` + 转 PNG(可选)
+
+### P22.2 · 首页 Hero 纯 SVG 动态视觉
+- [x] 重写 `index.html` Hero 区域,移除现有 CSS 渐变 + 噪点 layer,改为多层 SVG 合成
+- [x] Layer A:浅银 → 白渐变背景(保留)
+- [x] Layer B:大尺寸 lattice 晶格图案,opacity 0.12,鼠标 mousemove → 整体 translate(±8px),GSAP quickTo
+- [x] Layer C:30 个漂浮发光圆点,各自不同 delay / scale / opacity 循环动画
+- [x] Layer D:顶部光束 — `linearGradient` mask 模拟金属反射高光
+- [x] Layer E:底部 60% → 100% fade-out,无缝过渡到下一板块
+- [x] 标题保留现有 SplitText,但加入 CTA 双按钮组:"了解产品" `→ /product/` + "联系我们" `→ /contact/`
+- [x] 滚动指示器升级:单箭头改细线 + 动画 dot 上下回弹
+- [x] 移动端降级:lattice 静止、发光点改 8 个、禁用鼠标视差
+- [x] `prefers-reduced-motion` 完全降级为静态 SVG
+
+### P22.3 · 顶栏 / 页脚强化
+- [x] 顶栏滚动 > 32px 时 backdrop-blur 由 14px 增至 20px、bg 由 80% 升至 96%、border-bottom 显出(已有 = 微调即可)
+- [x] 顶栏右侧 logo / 搜索 / 语言 之间加 1px 细分隔线
+- [x] 移动端汉堡菜单展开:加入交叉淡入 + 顶部细灰栏
+- [x] 页脚:在 footer.tagline 下方加 4 个联系图标(📞 电话 ✉ 邮件 📍 地址 💼 招聘),内联 SVG 单色
+- [x] 页脚底部右侧加 TOLAND 1991 圆形印章 SVG
+- [x] 页脚分栏间加 1px 渐隐分割线
+- [x] 页脚 ICP / 版权 字号下调 11px、间距加宽
+
+### P22.4 · 首页其他板块视觉细节
+- [x] About 数据墙:三大数字(成立年/上市年/股票代码)加 IntersectionObserver 触发的计数动画;数字加 linear-gradient 字色
+- [x] Products 7 卡片:每张加上方 64px 高 SVG 缩略图(复用 P21 装饰风格 — 晶格 / 流线 / 同心环 / 蜂巢 / 波形 / 火花 / 螺旋)
+- [x] Lines 时间轴:左侧加 SVG 工艺流程图(5 节点 + 连线 + 当前高亮 dot)
+- [x] Tech 双栏:核心技术列表前加 mini SVG 图标(微观结构 / 化学符号 / 实验室)
+- [x] News 3 卡:hover 提升 + 主图占位改为 SVG 渐变方块(每张不同色调)
+- [x] Contact 三栏:每栏顶部加 28×28 mono-line SVG 图标(map-pin / chart / user)
+- [x] 全部板块入场动画沿用现有 `tl-fade-in` + `data-stagger`
+
+### P22.5 · 全站微交互
+- [x] `.tl-card` hover:transform translateY(-3px) + box-shadow 加深 + 内部 ::after 箭头出现位移
+- [x] `.tl-btn` :active 状态:scale(0.97) + inset shadow,过渡 90ms cubic-bezier
+- [x] 链接 hover:下划线从左到右渐入(`background-image: linear-gradient` + `background-size: 0% 1px → 100% 1px`)
+- [x] 顶部添加 1px 滚动进度条(window.scroll 监听 + width = scrollY/maxScroll)
+- [ ] 自定义 cursor(可选):hover 任何 .tl-card / .tl-btn 时光标变蓝点 + 轻微缩放(暂未实现,体验级别可选)
+- [x] 全站尊重 `prefers-reduced-motion: reduce`,自动降级为无动画
+
+### P22.6 · i18n 新增 + 验证 + 提交
+- [x] i18n 新键:`hero.cta_primary` / `hero.cta_secondary` / `footer.contact_phone` / `footer.contact_email` / `footer.contact_address` 等(zh+en 对称)
+- [x] 本地 31/31 HTTP 200 验证
+- [x] i18n 对称性检查 zh/en 一致(422/422)
+- [ ] Lighthouse 跑分(可选):性能 / a11y 不应低于当前
+- [x] commit `feat(ui): P22 视觉美化 - SVG 字标 + 动态 Hero + 全站微交互`
+
 
 ## 后续待办(下一次会话)
 

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="48" height="48" role="img" aria-label="Toland Alloy 1991">
+  <defs>
+    <path id="tl-arc-top" d="M 60 60 m -42 0 a 42 42 0 1 1 84 0"/>
+    <path id="tl-arc-bot" d="M 60 60 m -42 0 a 42 42 0 1 0 84 0"/>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#1d1d1f" stroke-width="1.2"/>
+  <circle cx="60" cy="60" r="48" fill="none" stroke="#1d1d1f" stroke-width="0.6" stroke-opacity="0.4"/>
+  <g fill="none" stroke="#1d1d1f" stroke-width="3" stroke-linecap="square">
+    <line x1="44" y1="48" x2="76" y2="48"/>
+    <line x1="60" y1="48" x2="60" y2="74"/>
+  </g>
+  <text font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="500" fill="#1d1d1f" letter-spacing="2.4">
+    <textPath href="#tl-arc-top" startOffset="50%" text-anchor="middle">TOLAND ALLOY</textPath>
+  </text>
+  <text font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="500" fill="#1d1d1f" letter-spacing="3">
+    <textPath href="#tl-arc-bot" startOffset="50%" text-anchor="middle">EST · 1991</textPath>
+  </text>
+  <circle cx="22" cy="60" r="1.5" fill="#1d1d1f"/>
+  <circle cx="98" cy="60" r="1.5" fill="#1d1d1f"/>
+</svg>

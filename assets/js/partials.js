@@ -25,9 +25,28 @@
   const NAV_HTML = `
 <nav class="tl-nav" role="navigation" aria-label="主导航" data-tl-nav>
   <div class="max-w-tl mx-auto h-full px-6 flex items-center justify-between">
-    <a href="${BASE}" class="flex items-baseline gap-1.5 select-none" aria-label="Toland Alloy Home">
-      <span class="text-base md:text-lg font-semibold tracking-tight" data-i18n="nav.brand">图南合金</span>
-      <span class="text-[10px] md:text-xs text-tl-muted tracking-[0.18em] uppercase" data-i18n="nav.brand_en">TOLAND</span>
+    <a href="${BASE}" class="tl-brand flex items-center gap-2 select-none" aria-label="Toland Alloy Home">
+      <span class="tl-brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="tl-nav-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0071e3"/>
+              <stop offset="1" stop-color="#0066cc"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="60" height="60" rx="14" ry="14" fill="url(#tl-nav-grad)"/>
+          <g fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="square">
+            <line x1="16" y1="20" x2="48" y2="20"/>
+            <line x1="32" y1="20" x2="32" y2="48"/>
+          </g>
+          <circle cx="32" cy="32" r="22" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1"/>
+          <circle cx="32" cy="48" r="2" fill="#ffffff"/>
+        </svg>
+      </span>
+      <span class="tl-brand-text hidden sm:flex items-baseline gap-1.5">
+        <span class="text-base md:text-lg font-semibold tracking-tight" data-i18n="nav.brand">图南合金</span>
+        <span class="text-[10px] md:text-xs text-tl-muted tracking-[0.18em] uppercase" data-i18n="nav.brand_en">TOLAND</span>
+      </span>
     </a>
 
     <ul class="hidden md:flex items-center gap-7 text-sm">
@@ -46,6 +65,7 @@
           <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
         </svg>
       </button>
+      <span class="tl-nav-divider hidden sm:block" aria-hidden="true"></span>
       <div class="tl-lang-switch hidden sm:inline-flex" role="group" aria-label="语言切换">
         <button data-lang="zh" aria-label="切换中文">中</button>
         <button data-lang="en" aria-label="Switch to English">EN</button>
@@ -103,11 +123,50 @@
 <footer class="tl-footer" data-tl-footer>
   <div class="tl-container grid grid-cols-2 md:grid-cols-5 gap-8 pb-10">
     <div class="col-span-2">
-      <a href="${BASE}" class="flex items-baseline gap-1.5 mb-3">
-        <span class="text-base font-semibold text-tl-text" data-i18n="nav.brand">图南合金</span>
-        <span class="text-[10px] text-tl-muted tracking-[0.18em] uppercase" data-i18n="nav.brand_en">TOLAND</span>
+      <a href="${BASE}" class="tl-brand flex items-center gap-2 mb-4">
+        <span class="tl-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="tl-foot-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0071e3"/>
+                <stop offset="1" stop-color="#0066cc"/>
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="60" height="60" rx="14" ry="14" fill="url(#tl-foot-grad)"/>
+            <g fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="square">
+              <line x1="16" y1="20" x2="48" y2="20"/>
+              <line x1="32" y1="20" x2="32" y2="48"/>
+            </g>
+            <circle cx="32" cy="32" r="22" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1"/>
+            <circle cx="32" cy="48" r="2" fill="#ffffff"/>
+          </svg>
+        </span>
+        <span class="flex items-baseline gap-1.5">
+          <span class="text-base font-semibold text-tl-text" data-i18n="nav.brand">图南合金</span>
+          <span class="text-[10px] text-tl-muted tracking-[0.18em] uppercase" data-i18n="nav.brand_en">TOLAND</span>
+        </span>
       </a>
-      <p class="text-tl-secondary text-xs leading-relaxed max-w-xs" data-i18n="footer.tagline">高端装备用高性能合金材料及制品提供方。</p>
+      <p class="text-tl-secondary text-xs leading-relaxed max-w-xs mb-5" data-i18n="footer.tagline">高端装备用高性能合金材料及制品提供方。</p>
+      <ul class="tl-footer-contact text-xs space-y-2">
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span data-i18n="footer.contact_phone">+86 0510-8631-8838</span>
+        </li>
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span data-i18n="footer.contact_email">sales@toland-alloy.com</span>
+        </li>
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span data-i18n="footer.contact_address">江苏省启东市经济开发区</span>
+        </li>
+      </ul>
     </div>
     <div>
       <h4 data-i18n="footer.col_company">公司</h4>
@@ -137,9 +196,33 @@
       </ul>
     </div>
   </div>
-  <div class="tl-container border-t border-black/[0.06] pt-6 flex flex-col md:flex-row md:justify-between gap-3 text-tl-muted">
-    <p data-i18n="footer.copyright">© 2026 江苏图南合金股份有限公司 版权所有</p>
-    <p data-i18n="footer.icp">苏公网安备 32118102000283 号</p>
+  <div class="tl-container border-t border-black/[0.06] pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+    <div class="text-tl-muted tl-footer-meta">
+      <p data-i18n="footer.copyright">© 2026 江苏图南合金股份有限公司 版权所有</p>
+      <p data-i18n="footer.icp">苏公网安备 32118102000283 号</p>
+    </div>
+    <div class="tl-footer-stamp" aria-hidden="true">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+        <defs>
+          <path id="tl-stamp-top" d="M 60 60 m -42 0 a 42 42 0 1 1 84 0"/>
+          <path id="tl-stamp-bot" d="M 60 60 m -42 0 a 42 42 0 1 0 84 0"/>
+        </defs>
+        <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="60" cy="60" r="48" fill="none" stroke="currentColor" stroke-width="0.5" stroke-opacity="0.4"/>
+        <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square">
+          <line x1="44" y1="48" x2="76" y2="48"/>
+          <line x1="60" y1="48" x2="60" y2="74"/>
+        </g>
+        <text font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="500" fill="currentColor" letter-spacing="2.2">
+          <textPath href="#tl-stamp-top" startOffset="50%" text-anchor="middle">TOLAND ALLOY</textPath>
+        </text>
+        <text font-family="Inter, -apple-system, sans-serif" font-size="9" font-weight="500" fill="currentColor" letter-spacing="3">
+          <textPath href="#tl-stamp-bot" startOffset="50%" text-anchor="middle">EST · 1991</textPath>
+        </text>
+        <circle cx="22" cy="60" r="1.2" fill="currentColor"/>
+        <circle cx="98" cy="60" r="1.2" fill="currentColor"/>
+      </svg>
+    </div>
   </div>
 </footer>
 
